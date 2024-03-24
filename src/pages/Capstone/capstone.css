@@ -1,0 +1,155 @@
+/* Adapted styles for Capstone from Portfolio */
+#capstone {
+    height: auto; 
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+/* Keyframes for banner animation, reused from Portfolio */
+@keyframes bannerFadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95); /* Start slightly zoomed out */
+    }
+    to {
+      opacity: 80%;
+      transform: scale(1); /* Scale back to normal size */
+    }
+}
+  
+.capstone-banner {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 75vh;
+    border-radius: 10px;
+    width: 100%;
+    opacity: 80%;
+    animation: bannerFadeIn 1s ease-out; /* Apply the animation */
+}
+  
+.capstoneContent {
+    height: 100vh;
+    padding: 5rem;
+    font-size: 6rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: bannerFadeIn 1s ease-out;
+}
+  
+
+/* New styles for sections adapted for Capstone */
+.section {
+    margin: 1rem auto;
+    padding: 1rem 5rem;
+    max-width: 65rem;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+
+/* Styles for Overview section buttons, reused from Portfolio */
+.project-buttons {
+    margin-top: 1rem;
+}
+  
+.project-buttons button {
+    background-color: yellow; /* Maintain the color scheme */
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.project-buttons button:hover {
+    background-color: white; /* Hover effect */
+}
+  
+.capstone-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: black;
+    color: white; /* Text color */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+  
+.capstone-table th, .capstone-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid yellow; 
+}
+  
+.capstone-table th {
+    background-color: yellow; /* Headers */
+    color: black; /* Text color for headers */
+}
+  
+/* Row hover effect */
+.capstone-table tr:hover {
+    background-color: black; /* Hover effect */
+    transform: scale(1.02); /* Slight enlargement */
+    transition: transform 0.3s ease;
+}
+  
+/* Animation for the table on load */
+.capstone-table {
+    animation: tableFadeIn 1s ease-out;
+    margin: 2rem;
+}
+
+.subsection {
+    display: flex;
+    flex-direction: row; /* Default side-by-side layout */
+    align-items: center;
+    margin-bottom: 2rem;
+}
+  
+.subsection-content {
+    flex: 1;
+}
+  
+.subsection-image {
+    width: 50%; /* Adjust based on preference */
+    margin-left: 2rem;
+    border-radius: 10px;
+}
+  
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .subsection {
+      flex-direction: column; /* Stack elements on narrow screens */
+    }
+  
+    .subsection-image {
+      width: 100%; /* Full width for images */
+      margin-left: 0;
+      margin-top: 1rem; /* Spacing between text and image */
+    }
+}

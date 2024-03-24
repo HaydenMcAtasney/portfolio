@@ -1,0 +1,173 @@
+/* Existing styles */
+#portfolio {
+    height: auto; 
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+/* Keyframes for banner animation */
+@keyframes bannerFadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95); /* Start slightly zoomed out */
+    }
+    to {
+      opacity: 80%;
+      transform: scale(1); /* Scale back to normal size */
+    }
+  }
+  
+  .portfolio-banner {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 75vh;
+    border-radius: 10px;
+    width: 100%;
+    opacity: 80%;
+    animation: bannerFadeIn 1s ease-out; /* Apply the animation */
+  }
+  
+  .portfolioContent {
+    height: 100vh;
+    padding: 5rem;
+    font-size: 6rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: bannerFadeIn 1s ease-out;
+  }
+  
+
+/* New styles for sections */
+.section {
+    margin: 1rem auto;
+    padding: 1rem 5rem;
+    max-width: 65rem;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+
+/* Styles for Overview section buttons */
+.project-buttons {
+    margin-top: 1rem;
+  }
+  
+  .project-buttons button {
+    background-color: yellow; 
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-buttons button:hover {
+    background-color: white; 
+  }
+  
+  .portfolio-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: black;
+    color: white; 
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .portfolio-table th, .portfolio-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid yellow; /* Yellow border for separation */
+  }
+  
+  .portfolio-table th {
+    background-color: yellow; /* Yellow background for headers */
+    color: black; /* Text color for headers */
+  }
+  
+  /* Row hover effect */
+  .portfolio-table tr:hover {
+    background-color: black; /* Darker shade when hovering */
+    transform: scale(1.02); /* Slightly enlarge the row */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Adding a cool animation to the table on load */
+  @keyframes tableFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .portfolio-table {
+    animation: tableFadeIn 1s ease-out;
+    margin: 2rem;
+    
+  }
+  
+
+  .subsection {
+    display: flex;
+    flex-direction: row; /* Images are side-by-side with text by default */
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .subsection-content {
+    flex: 1;
+  }
+  
+  .subsection-image {
+    width: 60%; /* Adjust based on preference */
+    margin-left: 2rem;
+    border-radius: 10px;
+    /* border: solid white 2px; */
+  }
+  
+  /* Responsive Design: Image under text for mobile */
+  @media (max-width: 768px) {
+    .subsection {
+      flex-direction: column; /* Stack image under text on narrow screens */
+    }
+  
+    .subsection-image {
+      width: 100%; /* Image takes full width */
+      margin-left: 0;
+      margin-top: 1rem; /* Add some space between the text and image */
+    }
+  }
+  
+  
+
+

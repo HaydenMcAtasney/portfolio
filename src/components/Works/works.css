@@ -1,0 +1,133 @@
+#works {
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.worksTitle {
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.worksDescription {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 460px) {
+    
+    .worksTitle {
+        font-size: 2rem;
+    }
+    .worksDescription {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+}
+
+.worksImgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 65rem;
+}
+
+.projectContainer {
+    position: relative;
+    width: 330px; /* Example for 3 items per row */
+    margin: 0.5rem;
+    overflow: hidden; /* ensures the sliding content is clipped to container boundaries */
+    border-radius: 20px; /* border-radius affects both image and overlay */
+    transition: transform 0.5s ease;
+    
+    
+}
+
+
+@media (max-width: 1200px) {
+    .projectContainer {
+        width: 330px; /* 2 items per row for smaller desktops and large tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .projectContainer {
+        width: 330px; /* 1 item per row for tablets and down */
+        margin: 0.5rem;
+    }
+}
+
+
+
+.worksImg {
+    object-fit: cover;
+    height: 20rem;
+    width: 100%;
+    border-radius: 20px; 
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.projectContainer:hover  {
+    transform: scale(1.05); 
+}
+
+.linksContainer {
+    display: flex;
+    justify-content: center; /* Center links horizontally */
+    gap: 1rem; /* creates some space between the links */
+}
+
+.projectInfo {
+    position: absolute;
+    bottom: -100%; /* start off below the bottom */
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: bottom 0.5s ease; /* transition for sliding effect */
+    border-radius: 20px; 
+    padding: 0.5rem;
+}
+
+.projectContainer:hover .projectInfo {
+    bottom: 0; /* slide up to cover the image on hover */
+}
+
+/* styling for text and links inside the projectInfo */
+.projectInfo h3, .projectInfo p, .projectInfo a {
+    margin: 0.5rem;
+}
+
+.projectInfo a {
+    background: yellow;
+    font-size: 0.9rem;
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.projectInfo a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+
+
+

@@ -1,0 +1,83 @@
+/*  styles */
+#intro {
+    height: calc(100vh - 5rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 75vh;
+    border-radius: 10px;
+    width: 100%;
+    opacity: 80%;
+}
+
+
+.introContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem; 
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello, .introPara {
+    font-weight: 100;
+}
+
+.hello {
+    font-size: 1.75rem;
+}
+
+.introName {
+    color: yellow;
+}
+
+.introPara {
+    font-size: 1rem;
+}
+
+.viewMyWorkBtn {
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    max-width: 200px; 
+    text-align: center;
+}
+
+.viewMyWorkBtn:hover {
+    background: yellow;
+    color: black;
+    transform: scale(1.05);
+}
+
+@media (max-width: 500px) {
+    .introContent {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+

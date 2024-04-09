@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './works.css';
 import MovieThumbnail from '../../assets/works-thumbnail-movie-db.png';
-import PortfolioThumbnail from '../../assets/portfolio-thumbnail-4.png';
+import PortfolioThumbnail from '../../assets/works-portfolio-thumbnail.png';
 import FlowerShopThumbnail from '../../assets/works-flower-shop-thumbnail.png';
 
 import { Link } from 'react-router-dom';

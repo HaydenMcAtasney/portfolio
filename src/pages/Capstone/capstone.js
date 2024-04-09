@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './capstone.css'; 
-import portfolioImage from '../../assets/flower-shop-banner.png';
+import portfolioImage from '../../assets/flower-shop-banner-2.png';
 import longDataFile from '../../assets/wordpress-yellow-border.png';
 import responsiveDesign from '../../assets/flower-shop-yellow-border.png';
 

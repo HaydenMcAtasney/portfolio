@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import "./portfolio.css";
 import portfolioImage from '../../assets/main-portfolio-banner-2.png';
-import longDataFile from '../../assets/yellow-border-code.png';
-import responsiveDesign from '../../assets/responsive-design.png';
+import longDataFile from '../../assets/yellow-border-code-2.png';
+import responsiveDesign from '../../assets/yellow-border-portfolio-preview.png';
 
 function Portfolio() {
   const [sections, setSections] = useState([]);

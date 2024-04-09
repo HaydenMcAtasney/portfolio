@@ -1,4 +1,4 @@
-/* Existing styles */
+/* portfolio styles */
 #portfolio {
     height: auto; 
     width: 100vw;
@@ -16,15 +16,15 @@ h3 {
     margin-bottom: 20px;
 }
 
-/* Keyframes for banner animation */
+/* keyframes for banner animation */
 @keyframes bannerFadeIn {
     from {
       opacity: 0;
-      transform: scale(0.95); /* Start slightly zoomed out */
+      transform: scale(0.95); /* start slightly zoomed out */
     }
     to {
       opacity: 80%;
-      transform: scale(1); /* Scale back to normal size */
+      transform: scale(1); /* scale back to normal size */
     }
   }
   
@@ -38,11 +38,11 @@ h3 {
     border-radius: 10px;
     width: 100%;
     opacity: 80%;
-    animation: bannerFadeIn 1s ease-out; /* Apply the animation */
+    animation: bannerFadeIn 1s ease-out; /* applies animation */
   }
   
   .portfolioContent {
-    height: 100vh;
+    height: 85vh;
     padding: 5rem;
     font-size: 6rem;
     font-weight: 700;
@@ -53,10 +53,10 @@ h3 {
   }
   
 
-/* New styles for sections */
+/* new styles for sections */
 .section {
     margin: 1rem auto;
-    padding: 1rem 5rem;
+    padding: 1rem 2.5rem;
     max-width: 65rem;
 }
 
@@ -72,12 +72,13 @@ h3 {
     color: whitesmoke;
 }
 
-/* Styles for Overview section buttons */
+/* styles for overview section buttons */
 .project-buttons {
     margin-top: 1rem;
   }
   
   .project-buttons button {
+    width: 25%;
     background-color: yellow; 
     color: black;
     border: none;
@@ -97,28 +98,28 @@ h3 {
     border-collapse: collapse;
     background-color: black;
     color: white; 
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    transition: all 0.3s ease; /* smooth transition for hover effects */
   }
   
   .portfolio-table th, .portfolio-table td {
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid yellow; /* Yellow border for separation */
+    border-bottom: 1px solid yellow; 
   }
   
   .portfolio-table th {
-    background-color: yellow; /* Yellow background for headers */
-    color: black; /* Text color for headers */
+    background-color: yellow; /* yellow background for headers */
+    color: black; /* text color for headers */
   }
   
-  /* Row hover effect */
+  /* row hover effect */
   .portfolio-table tr:hover {
-    background-color: black; /* Darker shade when hovering */
-    transform: scale(1.02); /* Slightly enlarge the row */
+    background-color: black; /* darker shade when hovering */
+    transform: scale(1.02); /* slightly enlarge the row */
     transition: transform 0.3s ease;
   }
   
-  /* Adding a cool animation to the table on load */
+  /* adding a cool animation to the table on load */
   @keyframes tableFadeIn {
     from {
       opacity: 0;
@@ -139,7 +140,7 @@ h3 {
 
   .subsection {
     display: flex;
-    flex-direction: row; /* Images are side-by-side with text by default */
+    flex-direction: row; /* images are side-by-side with text by default */
     align-items: center;
     margin-bottom: 2rem;
   }
@@ -149,24 +150,60 @@ h3 {
   }
   
   .subsection-image {
-    width: 60%; /* Adjust based on preference */
+    width: 60%; 
     margin-left: 2rem;
     border-radius: 10px;
     /* border: solid white 2px; */
   }
   
-  /* Responsive Design: Image under text for mobile */
-  @media (max-width: 768px) {
-    .subsection {
-      flex-direction: column; /* Stack image under text on narrow screens */
-    }
-  
-    .subsection-image {
-      width: 100%; /* Image takes full width */
-      margin-left: 0;
-      margin-top: 1rem; /* Add some space between the text and image */
-    }
+/* Responsive Design */
+@media (max-width: 768px) {
+  #portfolio, #portfolio h2, #portfolio h3, #portfolio p, #portfolio .section, #portfolio .subsection-content {
+      text-align: center; /* center aligns text elements */
   }
+
+  #portfolio .portfolioContent, #portfolio .section, #portfolio .subsection, #portfolio .project-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* centers content vertically */
+      width: 100%;
+  }
+
+  #portfolio .portfolioContent {
+      font-size: 4rem; 
+  }
+
+  #portfolio h2 {
+      font-size: 2rem; 
+  }
+
+  #portfolio p, #portfolio .project-buttons button {
+      font-size: 1rem; 
+  }
+
+  #portfolio .project-buttons button {
+      width: 100%;
+      padding: 10px 20px; 
+      margin: 0 0 10px; 
+  }
+
+  #portfolio .portfolio-table, #portfolio .portfolio-table table {
+      width: 100%; /* ensures the table fits within the screen width */
+      margin: 0;
+      table-layout: fixed; /* prevents horizontal overflow */
+  }
+
+  #portfolio .portfolio-table th, #portfolio .portfolio-table td {
+      word-wrap: break-word; /* ensures content within table does not overflow  */
+  }
+
+  #portfolio .subsection-image {
+      width: 95%; /* adjusts image size to fit within viewport  */
+      margin: 20px 0; /* adds space above and below images */
+  }
+}
+
+
   
   
 

@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import './moviedb.css'; 
-import moviedbBanner from '../../assets/movie-db-banner-image.png';
+import moviedbBanner from '../../assets/movie-database-banner-5.png';
 import movieFilterPicture from '../../assets/movie-filter-picture-2.png';
-import moviedbResponsive from '../../assets/moviedb-responsive.png';
+import moviedbResponsive from '../../assets/yellow-border-preview.png';
 
 function MovieDb() {
   const [sections, setSections] = useState([]);
 
   useEffect(() => {
-    fetch('/data/data.json') //json file includes MovieDB data
+    fetch('/data/data.json') 
       .then(response => response.json())
       .then(data => {
-        setSections(data.movieDB.sections); // Adjusted for movie database data
+        setSections(data.movieDB.sections); 
       })
       .catch(error => console.log(error));
   }, []);
@@ -19,7 +19,7 @@ function MovieDb() {
   return (
     <section id='moviedb'>
       <div className="moviedbContent">
-        <span className='moviedbText'></span> {/* Tailored content for MovieDB */}
+        <span className='moviedbText'>Movie Database</span> 
       </div>
       <img src={moviedbBanner} alt="Movie Database Project" className='moviedb-banner' />
       
@@ -30,7 +30,7 @@ function MovieDb() {
           {section.content && <p>{section.content}</p>}
           
           {section.id === "overview" && (
-            <div className="moviedb-table"> {/* Updated class name to match MovieDB */}
+            <div className="moviedb-table"> 
               <table>
                 <tbody>
                   <tr>
@@ -56,8 +56,8 @@ function MovieDb() {
 
           {section.id === "design" && (
             <div className="project-buttons">
-              <button onClick={() => window.location.href = section.wireframes.desktop}>Desktop Wireframe</button>
-              <button onClick={() => window.location.href = section.wireframes.mobile}>Mobile Wireframe</button>
+              <button onClick={() => window.location.href = section.prototypes.desktop}>Desktop Prototype</button>
+              <button onClick={() => window.location.href = section.prototypes.mobile}>Mobile Prototype</button>
             </div>
           )}
 

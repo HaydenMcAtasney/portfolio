@@ -12,10 +12,12 @@
 }
 
 .skillTitle {
+    color: yellow;
     font-size: 3rem;
     font-weight: 600;
     padding-top: 3rem;
     margin-bottom: 1.5rem;
+    
 }
 
 .skillDescription {
@@ -28,7 +30,7 @@
 
 .skillBars {
     margin: 1.5rem;
-    width: 100vw;
+    /* width: 100vw; */
     max-width: 80%;
     text-align: left;
 }
@@ -36,27 +38,42 @@
 .skillBar {
     display: flex;
     margin: 1rem;
-    padding: 1.5rem 2rem;
+    padding: 1rem 1rem 0 1rem;
     border-radius: 1rem;
-    background: rgb(50, 50, 50);
-    transition: all 0.3s ease, transform 0.3s ease;
+    border: 1px solid white;
+    background-color: black;
+    transition: all 0.3s ease;
 
 }
 
 .skillBar:hover {
     transform: scale(1.05);
+    background-color: yellow;
+    border: 1px solid black;
+    /* color: black; */
+}
+
+.skillBar:hover .skillBarImg {
+    filter: brightness(0);
 }
 
 .skillBarText {
-    
+    color: white;
     line-height: 2rem;
 }
 
+.skillBarText:hover {
+    color: black;
+}
+
+
+
 .skillBarImg {
     object-fit: cover;
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
     margin-right: 2rem;
+    
      
 }
 

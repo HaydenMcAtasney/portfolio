@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./portfolio.css";
-import portfolioImage from '../../assets/portfolio-image-test.jpg';
-import longDataFile from '../../assets/long-data-file-1.png';
+import portfolioImage from '../../assets/main-portfolio-banner-2.png';
+import longDataFile from '../../assets/yellow-border-code.png';
 import responsiveDesign from '../../assets/responsive-design.png';
 
 function Portfolio() {
@@ -19,7 +19,7 @@ function Portfolio() {
   return (
     <section id='portfolio'>
       <div className="portfolioContent">
-        <span className='portfolioText'></span>
+        <span className='portfolioText'>Portfolio</span>
       </div>
       <img src={portfolioImage} alt="profile" className='portfolio-banner' />
       
@@ -56,8 +56,10 @@ function Portfolio() {
 
           {section.id === "design" && (
             <div className="project-buttons">
-              <button onClick={() => window.location.href = section.wireframes.desktop}>Desktop Wireframe</button>
-              <button onClick={() => window.location.href = section.wireframes.mobile}>Mobile Wireframe</button>
+              <button onClick={() => window.location.href = section.wireframes.all}>Wireframes</button>
+              {/* <button onClick={() => window.location.href = section.prototypes.desktop}>Desktop Prototype</button> */}
+              {/* <button onClick={() => window.location.href = section.prototypes.mobile}>Mobile Prototype</button> */}
+              
             </div>
           )}
 

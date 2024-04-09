@@ -15,15 +15,15 @@ h3 {
     margin-bottom: 20px;
 }
 
-/* Keyframes for banner animation, reused from Capstone */
+/* keyframes for banner animation, reused from portfolio*/
 @keyframes bannerFadeIn {
     from {
       opacity: 0;
-      transform: scale(0.95); /* Start slightly zoomed out */
+      transform: scale(0.95); /* start slightly zoomed out */
     }
     to {
       opacity: 80%;
-      transform: scale(1); /* Scale back to normal size */
+      transform: scale(1); /* scale back to normal size */
     }
 }
   
@@ -33,31 +33,15 @@ h3 {
     right: 0;
     z-index: -1;
     object-fit: cover;
-    height: 80vh;
+    height: 75vh;
     width: 100%;
     border-radius: 10px;
     opacity: 80%;
-    animation: bannerFadeIn 1s ease-out; /* Apply the animation */
+    animation: bannerFadeIn 1s ease-out; /* applies animation */
 }
 
-@media (max-width:1050px) {
-    .moviedb-banner {
-        
-    }
-}
-
-@media (max-width:960px) {
-    .moviedb-banner {
-        
-    }
-}
-
-
-
-
-  
 .moviedbContent {
-    height: 100vh;
+    height: 85vh;
     padding: 5rem;
     font-size: 6rem;
     font-weight: 700;
@@ -67,10 +51,10 @@ h3 {
     animation: bannerFadeIn 1s ease-out;
 }
 
-/* New styles for sections */
+/* new styles for sections */
 .section {
     margin: 1rem auto;
-    padding: 1rem 5rem;
+    padding: 1rem 2.5rem;
     max-width: 65rem;
 }
 
@@ -86,13 +70,14 @@ h3 {
     color: whitesmoke;
 }
 
-/* Styles for Overview section buttons */
+/* styles for overview section buttons */
 .project-buttons {
     margin-top: 1rem;
 }
   
 .project-buttons button {
-    background-color: yellow; /* Customizable based on MovieDB theme */
+    width: 25%;
+    background-color: yellow; 
     color: black;
     border: none;
     padding: 0.5rem 1rem;
@@ -103,36 +88,36 @@ h3 {
 }
   
 .project-buttons button:hover {
-    background-color: white; /* Hover effect */
+    background-color: white; 
 }
   
 .moviedb-table table {
     width: 100%;
     border-collapse: collapse;
     background-color: black;
-    color: white; /* Text color */
+    color: white; 
 }
 
 .moviedb-table th, .moviedb-table td {
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid yellow; /* Visual style */
+    border-bottom: 1px solid yellow; 
 }
   
 .moviedb-table th {
-    background-color: yellow; /* Header style */
-    color: black; /* Header text color */
+    background-color: yellow; /* header style */
+    color: black; /* header text color */
 }
 
-/* Row hover effect */
+/* row hover effect */
 .moviedb-table tr:hover {
-    background-color: black; /* Hover effect */
-    transform: scale(1.02); /* Slight enlargement */
+    background-color: black; 
+    transform: scale(1.02); /* slight enlargement */
 }
 
 .subsection {
     display: flex;
-    flex-direction: row; /* Default layout */
+    flex-direction: row; 
     align-items: center;
     margin-bottom: 2rem;
 }
@@ -142,20 +127,54 @@ h3 {
 }
   
 .subsection-image {
-    width: 50%; /* Image width, adjustable */
+    width: 50%; 
     margin-left: 2rem;
     border-radius: 10px;
 }
 
-/* Responsive Design adjustments for smaller screens */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .subsection {
-      flex-direction: column; /* Stack elements vertically */
+    #moviedb, #moviedb h2, #moviedb h3, #moviedb p, #moviedb .section, #moviedb .subsection-content {
+        text-align: center; /* center aligns elements */
     }
-  
-    .subsection-image {
-      width: 100%; /* Full width for images */
-      margin-left: 0;
-      margin-top: 1rem; /* Spacing above image */
+
+    #moviedb .moviedbContent, #moviedb .section, #moviedb .subsection, #moviedb .project-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* centers content vertically within the section */
+    }
+
+    #moviedb .moviedbContent {
+        font-size: 4rem; 
+    }
+
+    #moviedb h2 {
+        font-size: 2rem; 
+    }
+
+    #moviedb p, #moviedb .project-buttons button {
+        font-size: 1rem; 
+    }
+
+    #moviedb .project-buttons button {
+        width: 100%;
+        padding: 10px 20px; /* increases button size for easier interaction for mobile*/
+        margin: 0 0 10px; /* adds space between buttons */
+    }
+
+    #moviedb .moviedb-table, #moviedb .moviedb-table table {
+        width: 100%; /* ensures the table fits within the screen width*/
+        margin: 0;
+        table-layout: fixed; /* Prevents horizontal overflow */
+    }
+
+    #moviedb .moviedb-table th, #moviedb .moviedb-table td {
+        word-wrap: break-word; /* ensures content within table cells does not overflow */
+    }
+
+    #moviedb .subsection-image {
+        width: 95%; /* adjusts image size to fit within viewport */
+        margin: 20px 0; /* adds space above and below images */
     }
 }
+

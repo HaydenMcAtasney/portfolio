@@ -10,7 +10,7 @@
     },
     "about": {
         "title": "What I Do",
-        "description": "As a Front-End Developer, I specialize in creating visually appealing, user-centric websites. Expert in HTML, CSS, JavaScript, and React, I transform ideas into engaging digital experiences.",
+        "description": "As a Front-End Developer, my passion lies in crafting beautiful, user-focused websites. With expertise in HTML, CSS, JavaScript, and React, I turn concepts into captivating online journeys.",
         "codingSkills": "Coding Skills",
         "codingParagraph": "JavaScript, HTML, CSS (SCSS), React, Git/GitHub, jQuery, Gulp, WordPress (with PHP).",
         "designSkills": "Design Skills",
@@ -22,8 +22,8 @@
         "portfolioTitle": "Portfolio",
         "portfolioLanguages": "React, REST API, GitHub, HTML5, Sass",
         "movieDatabaseTitle": "Our Movie DB",
-        "movieDatabaseLanguages": "HTML, CSS, JavaScript, React.",
-        "capstoneTitle": "Capstone",
+        "movieDatabaseLanguages": "HTML, CSS, JavaScript, React",
+        "capstoneTitle": "The Floral Shop",
         "capstoneLanguages": "WordPress, PHP, Sass, HTML5"
     },
     "footer": {
@@ -32,43 +32,44 @@
     },
     "portfolio": {
         "sections": [
-            {
-                "id": "portfolio",
-                "title": "Portfolio",
-                "content": "I created my portfolio website as a vibrant showcase of my skills in design and development, specifically from a front-end developer's perspective. Keen on making my portfolio easy to manage, I opted to use React for its development. The choice was driven by React's amazing ability to simplify updates through its reusable components, making it much easier for me to keep my projects up-to-date and neatly organized."
-            },
+            
             {
                 "id": "overview",
                 "title": "Overview",
+                "content": "I created my portfolio website as a vibrant showcase of my skills in design and development, specifically from a front-end developer's perspective. Keen on making my portfolio easy to manage, I opted to use React for its development. The choice was driven by React's amazing ability to simplify updates through its reusable components, making it much easier for me to keep my projects up-to-date and neatly organized.",
                 "duration": "5 Weeks",
                 "team": "Hayden McAtasney",
                 "roles": "UI/UX Design, Front-End Development",
-                "techStack": "React, HTML5, Sass, GitHub, Adobe XD, Figma, SEO"
+                "techStack": "React, HTML5, Sass, GitHub, Adobe XD, SEO"
             },
             {
                 "id": "planning",
                 "title": "Planning",
-                "content": "I created my portfolio website to show off my web design and programming skills. I'm Hayden McAtasney, and it was crucial for me to make the website clear and easy to use, as it reflects my professional skills. Also, I needed a website that I could easily update with new projects to show my latest work. By using React, a tool that lets you reuse code, managing my website became simpler. This made it easier to add new things or update it. Before building the site, I planned carefully. I decided what to include, organized it, designed initial layouts, made interactive models, and chose a visual style. This planning helped me build the website efficiently and effectively."
+                "content": "I created my portfolio website to show off my web design and programming skills. It was crucial for me to make the website clear and easy to use, as it reflects my professional skills. Also, I needed a website that I could easily update with new projects to show my latest work. By using React, a tool that lets you reuse code, managing my website became simpler. This made it easier to add new things or update it. Before building the site, I planned carefully. I decided what to include, organized it, designed initial layouts, made interactive models, and chose a visual style. This planning helped me build the website efficiently and effectively."
             },
             {
                 "id": "design",
                 "title": "Design",
                 "wireframes": {
-                    "desktop": "YOUR_DESKTOP_WIREFRAME_URL",
-                    "mobile": "YOUR_MOBILE_WIREFRAME_URL"
+                    "all": "https://xd.adobe.com/view/3ea64e0c-d851-4942-a36c-efb6d95d7085-6bf5/"   
                 },
-                "content": "I designed the wireframe with our content plan and information architecture in mind. I chose a white background, dark grey text, and plenty of whitespace for the website's theme to keep the focus on the content. For the project list page, I carefully selected unique background colors for each project, adding a personal touch to every one of them."
+                "prototypes": {
+                    "desktop": "https://xd.adobe.com/view/95f60bd5-d638-42fd-a4b6-eee8652e8e50-c0a5/",
+                    "mobile": "https://xd.adobe.com/view/2c4a7226-d8fc-41fd-8d23-bc82587b51e3-7919/"
+                },
+
+                "content": "I designed the site with my wireframes in mind. I wanted my portfolio to have a minimalistic vibe and be easy to digest. When I went to design the actual website, I went with white, dark grey, black, and yellow as my main colors. I also wanted to add suttle animations to make my portfolio more engaging."
             },
             {
                 "id": "development",
                 "title": "Development",
                 "bigDataFile": "To simplify handling my projects, I put together a single data file that holds all the information about my projects. Then, I crafted some reusable React components that pull this data and display it. This approach has made it super easy and efficient to update, add, or remove projects whenever I need to.",
-                "responsiveDesign": "I made my portfolio responsive by using flexible layouts, media queries, and responsive images, ensuring it looks great on any device, from desktops to smartphones, for a seamless user experience."
+                "responsiveDesign": "I made my portfolio responsive by using flexible layouts and media queries ensuring it looks great on any device, from desktops to smartphones, for a seamless user experience."
             },
             {
                 "id": "reflection",
                 "title": "Reflection",
-                "content": "Working on this portfolio let me dive into React, testing new skills and appreciating the efficiency of React components for displaying project data. Early planning and breaking the project into manageable parts made the development process smoother. I learned the importance of seeing things from a user's perspective, tailoring the site to meet their needs. For instance, rather than creating a separate page for my contact info, I integrated it at the end of every page for better accessibility."
+                "content": "In developing this portfolio, I immersed myself in React to enhance my skills and appreciated its component efficiency for project display. By breaking down the project into smaller sections early, the development flowed more smoothly. I focused on understanding user needs, which led me to integrate my contact info at the bottom of every page for easier access, rather than isolating it on a separate page."
             }
         ]
     },
@@ -76,7 +77,7 @@
         "sections": [
             {
                 "id": "overview",
-                "title": "Capstone Project",
+                "title": "Overview",
                 "content": "For my capstone project in the Front-End Web Developer Program at British Columbia Institute of Technology, I developed a dynamic floral shop website using WordPress as the core platform. I extensively customized the site with PHP and CSS for a unique design and functionality. Advanced Custom Fields (ACFs) and multiple plugins were utilized to enhance the site's capabilities, providing a seamless and rich user experience.",
                 "duration": "1 month",
                 "team": "Hayden McAtasney",
@@ -86,10 +87,10 @@
             {
                 "id": "design",
                 "title": "Design",
-                "content": "The design process began with crafting wireframes and defining the information architecture, ensuring a user-friendly layout. Next, the website's visual styling was achieved using SASS, which facilitated efficient and organized CSS development, allowing for a cohesive and attractive design.",
+                "content": "The design process began with crafting mobile wireframes and defining the information architecture, ensuring a user-friendly layout. Next, the website's visual styling was achieved using SASS, which facilitated efficient and organized CSS development, allowing for a cohesive and attractive design.",
                 "wireframes": {
-                    "desktop": "http://example.com/desktop-wireframe",
-                    "mobile": "http://example.com/mobile-wireframe"
+                    "mobile": "https://xd.adobe.com/view/6ffecf8b-4867-4d5c-af45-50a378581f24-3aad/"
+                    
                 }
             },
             {
@@ -110,7 +111,7 @@
         "sections": [
             {
                 "id": "overview",
-                "title": "Movie Database",
+                "title": "Overview",
                 "content": "OurMovieDB is an app I built with ReactJS where you can explore and keep track of movies. It connects to the TMDb API to bring you details on popular, top-rated, now playing, and upcoming movies with an easy to use filter. You can also save your favorites!",
                 "duration": "1 Month",
                 "team": "Hayden McAtasney",
@@ -121,9 +122,9 @@
                 "id": "design",
                 "title": "Design",
                 "content": "OurMovieDB sports a contemporary, clean design. I chose yellow and black as the accent colors to inject energy and vibrancy into the app. The design journey began with detailed mockups in Adobe Photoshop, setting the stage. Following this, I developed an interactive prototype using Adobe XD to guide the development with clarity. ",
-                "wireframes": {
-                    "desktop": "link-to-desktop-wireframe",
-                    "mobile": "link-to-mobile-wireframe"
+                "prototypes": {
+                    "desktop": "https://xd.adobe.com/view/40f5ae71-2476-477b-90c1-840f3f24c0d5-15a6/",
+                    "mobile": "https://xd.adobe.com/view/892bdf63-9d04-4494-b7c8-903e671a7c79-dc78/"
                 }
             },
             {

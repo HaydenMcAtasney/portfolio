@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./intro.css";
-import bgImage from "../../assets/banner-image.png";
+import bgImage from "../../assets/cool-new-banner-2.png";
 import { Link } from 'react-scroll';
 
 const Intro = () => {
@@ -12,7 +12,7 @@ const Intro = () => {
             .then(response => response.json())
             .then((data) => {
                 console.log(data);
-                setHeroData(data.hero); // Now storing hero data
+                setHeroData(data.hero); 
             
                
             })
@@ -38,7 +38,7 @@ const Intro = () => {
                     {heroData?.workBtn}
                 </Link>
             </div>
-            {/* Use bgImage state for the src attribute */}
+            
             <img src={bgImage} alt="profile" className='bg' />
         </section>
     );

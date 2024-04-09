@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './capstone.css'; 
-import portfolioImage from '../../assets/portfolio-image-test.jpg';
-import longDataFile from '../../assets/long-data-file-1.png';
-import responsiveDesign from '../../assets/responsive-design.png';
+import portfolioImage from '../../assets/flower-shop-banner.png';
+import longDataFile from '../../assets/wordpress-yellow-border.png';
+import responsiveDesign from '../../assets/flower-shop-yellow-border.png';
 
 function Capstone() {
   const [sections, setSections] = useState([]);
@@ -19,7 +19,7 @@ function Capstone() {
   return (
     <section id='capstone'>
     <div className="capstoneContent">
-      <span className='capstoneText'>Capstone Project</span> {/* Updated text content */}
+      <span className='capstoneText'>The Flower Shop</span> 
     </div>
     <img src={portfolioImage} alt="Capstone Project" className='capstone-banner' />
     
@@ -30,7 +30,7 @@ function Capstone() {
         {section.content && <p>{section.content}</p>}
         
         {section.id === "overview" && (
-          <div className="capstone-table"> {/* Updated class name */}
+          <div className="capstone-table"> 
             <table>
               <tbody>
                 <tr>
@@ -56,8 +56,8 @@ function Capstone() {
 
         {section.id === "design" && (
           <div className="project-buttons">
-            <button onClick={() => window.location.href = section.wireframes.desktop}>Desktop Wireframe</button>
-            <button onClick={() => window.location.href = section.wireframes.mobile}>Mobile Wireframe</button>
+            <button onClick={() => window.location.href = section.wireframes.mobile}>Mobile Wireframes</button>
+            
           </div>
         )}
 

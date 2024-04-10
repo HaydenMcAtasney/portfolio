@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./intro.css";
-import bgImage from "../../assets/cool-new-banner-2.png";
+import bgImage from "../../assets/cool-new-banner-4.png";
 import { Link } from 'react-scroll';
 
 const Intro = () => {

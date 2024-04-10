@@ -35,7 +35,7 @@ useEffect(() => {
                         <div className="linksContainer">
                         <a href="https://github.com/HaydenMcAtasney/portfolio">GitHub</a>
                         <a href="https://haydenmcatasney.com/">Live Site</a>
-                        <Link to="/portfolio">LEARN MORE</Link>
+                        <Link className="learnMore" to="/portfolio">Learn more</Link>
 
                         </div>
                     </div>
@@ -48,7 +48,7 @@ useEffect(() => {
                         <div className="linksContainer">
                         <a href="https://github.com/NandoHsp/ourmoviedb-app">GitHub</a>
                         <a href="https://nandowebdev.com/ourmoviedb/">Live Site</a>
-                        <Link to="/moviedb">LEARN MORE</Link>
+                        <Link className="learnMore" to="/moviedb">Learn more</Link>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ useEffect(() => {
                         <div className="linksContainer">
                         <a href="https://github.com/htpwebdesign/floral-shop">GitHub</a>
                         <a href="https://floralshop.bcitwebdeveloper.ca/">Live Site</a>
-                        <Link to="/capstone">LEARN MORE</Link>
+                        <Link className="learnMore" to="/capstone">Learn more</Link>
                         </div>
                     </div>
                 </div>

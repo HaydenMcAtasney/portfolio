@@ -29,15 +29,15 @@ h3 {
 }
   
 .capstone-banner {
-    position: absolute;
-    top: 3rem;
+    position: fixed;
+    top: 7rem;
     right: 0;
     z-index: -1;
     object-fit: cover;
     height: 75vh;
     border-radius: 10px;
     width: 100%;
-    opacity: 80%;
+    opacity: 50%;
     animation: bannerFadeIn 1s ease-out; /* apply the animation */
 }
   

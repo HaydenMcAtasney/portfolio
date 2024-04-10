@@ -51,7 +51,7 @@
                 "id": "design",
                 "title": "Design",
                 "wireframes": {
-                    "all": "https://xd.adobe.com/view/3ea64e0c-d851-4942-a36c-efb6d95d7085-6bf5/"   
+                    "all": "https://xd.adobe.com/view/3ea64e0c-d851-4942-a36c-efb6d95d7085-6bf5/grid"   
                 },
                 "prototypes": {
                     "desktop": "https://xd.adobe.com/view/95f60bd5-d638-42fd-a4b6-eee8652e8e50-c0a5/",
@@ -89,7 +89,7 @@
                 "title": "Design",
                 "content": "The design process began with crafting mobile wireframes and defining the information architecture, ensuring a user-friendly layout. Next, the website's visual styling was achieved using SASS, which facilitated efficient and organized CSS development, allowing for a cohesive and attractive design.",
                 "wireframes": {
-                    "mobile": "https://xd.adobe.com/view/6ffecf8b-4867-4d5c-af45-50a378581f24-3aad/"
+                    "mobile": "https://xd.adobe.com/view/6ffecf8b-4867-4d5c-af45-50a378581f24-3aad/grid"
                     
                 }
             },
@@ -123,8 +123,8 @@
                 "title": "Design",
                 "content": "OurMovieDB sports a contemporary, clean design. I chose yellow and black as the accent colors to inject energy and vibrancy into the app. The design journey began with detailed mockups in Adobe Photoshop, setting the stage. Following this, I developed an interactive prototype using Adobe XD to guide the development with clarity. ",
                 "prototypes": {
-                    "desktop": "https://xd.adobe.com/view/40f5ae71-2476-477b-90c1-840f3f24c0d5-15a6/",
-                    "mobile": "https://xd.adobe.com/view/892bdf63-9d04-4494-b7c8-903e671a7c79-dc78/"
+                    "desktop": "https://xd.adobe.com/view/40f5ae71-2476-477b-90c1-840f3f24c0d5-15a6/grid",
+                    "mobile": "https://xd.adobe.com/view/892bdf63-9d04-4494-b7c8-903e671a7c79-dc78/grid"
                 }
             },
             {

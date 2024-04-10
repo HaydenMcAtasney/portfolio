@@ -78,9 +78,9 @@
             {
                 "id": "overview",
                 "title": "Overview",
-                "content": "For my capstone project in the Front-End Web Developer Program at British Columbia Institute of Technology, I developed a dynamic floral shop website using WordPress as the core platform. I extensively customized the site with PHP and CSS for a unique design and functionality. Advanced Custom Fields (ACFs) and multiple plugins were utilized to enhance the site's capabilities, providing a seamless and rich user experience.",
+                "content": "For our capstone project in the Front-End Web Developer Program at British Columbia Institute of Technology, we developed a dynamic floral shop website using WordPress as the core platform. We extensively customized the site with PHP and CSS for a unique design and functionality. Advanced Custom Fields (ACFs) and multiple plugins were utilized to enhance the site's capabilities, providing a seamless and rich user experience.",
                 "duration": "1 month",
-                "team": "Hayden McAtasney",
+                "team": "Hayden McAtasney, Gray Black",
                 "roles": "Full Stack Developer",
                 "techStack": "WordPress, PHP, CSS, Advanced Custom Fields (ACFs), Plugins"
             },
@@ -96,8 +96,8 @@
             {
                 "id": "development",
                 "title": "Development Process",
-                "content": "During the development process, I leveraged WordPress, integrating PHP and SASS for customization. Advanced Custom Fields and plugins enriched functionality, enabling a feature-rich, responsive, and visually appealing floral shop website.",
-                "wordpress": "This project helped me solidify my knowledge in all things WordPress. I feel much more confident with it after building this project.",
+                "content": "During the development process, we leveraged WordPress, integrating PHP and SASS for customization. Advanced Custom Fields and plugins enriched functionality, enabling a feature-rich, responsive, and visually appealing floral shop website.",
+                "wordpress": "This project helped us solidify our knowledge in all things WordPress. I feel much more confident with it after building this project.",
                 "styling": "Styling the site significantly enhanced my SASS knowledge and greatly improved my design skills, offering a hands-on learning experience."
             },
             {
@@ -112,16 +112,16 @@
             {
                 "id": "overview",
                 "title": "Overview",
-                "content": "OurMovieDB is an app I built with ReactJS where you can explore and keep track of movies. It connects to the TMDb API to bring you details on popular, top-rated, now playing, and upcoming movies with an easy to use filter. You can also save your favorites!",
+                "content": "OurMovieDB is an app we built with ReactJS where you can explore and keep track of movies. It connects to the TMDb API to bring you details on popular, top-rated, now playing, and upcoming movies with an easy to use filter. You can also save your favorites!",
                 "duration": "1 Month",
-                "team": "Hayden McAtasney",
+                "team": "Hayden McAtasney, Fernando Hospina",
                 "roles": "Front-End Development, UI/UX Design",
                 "techStack": "HTML5, Sass, GitHub, AdobeXD, React, and Photoshop"
             },
             {
                 "id": "design",
                 "title": "Design",
-                "content": "OurMovieDB sports a contemporary, clean design. I chose yellow and black as the accent colors to inject energy and vibrancy into the app. The design journey began with detailed mockups in Adobe Photoshop, setting the stage. Following this, I developed an interactive prototype using Adobe XD to guide the development with clarity. ",
+                "content": "OurMovieDB sports a contemporary, clean design. We chose yellow and black as the accent colors to inject energy and vibrancy into the app. The design journey began with detailed mockups in Adobe Photoshop, setting the stage. Following this, we developed an interactive prototype using Adobe XD to guide the development with clarity. ",
                 "prototypes": {
                     "desktop": "https://xd.adobe.com/view/40f5ae71-2476-477b-90c1-840f3f24c0d5-15a6/grid",
                     "mobile": "https://xd.adobe.com/view/892bdf63-9d04-4494-b7c8-903e671a7c79-dc78/grid"
@@ -130,14 +130,14 @@
             {
                 "id": "development",
                 "title": "Development",
-                "content": "In developing the app, I crafted a movie filter, integrated multiple pages with React Router, and added a favorites feature. I also ensured the design was responsive, adapting smoothly across devices. This process involved combining React's dynamic capabilities with thoughtful design to create a user-friendly and engaging experience.",
+                "content": "In developing the app, we crafted a movie filter, integrated multiple pages with React Router, and added a favorites feature. We also ensured the design was responsive, adapting smoothly across devices. This process involved combining React's dynamic capabilities with thoughtful design to create a user-friendly and engaging experience.",
                 "database": "The movie filter feature lets users sort movies by popular, top-rated, now playing, and upcoming categories. This was achieved by using the TMDb API along with React's useState and useEffect hooks.",
-                "styling": "I adopted a mobile-first design strategy, focusing on optimizing movie cards and detailed information to fit nicely across various devices. This approach helps prevent a cluttered look, ensuring the site looks great on mobiles, tablets, and desktops, thanks to its responsive design."
+                "styling": "We adopted a mobile-first design strategy, focusing on optimizing movie cards and detailed information to fit nicely across various devices. This approach helps prevent a cluttered look, ensuring the site looks great on mobiles, tablets, and desktops, thanks to its responsive design."
             },
             {
                 "id": "reflection",
                 "title": "Reflection",
-                "content": "Embarking on this project was a journey of growth and discovery. Implementing a mobile-first design and mastering React's nuances, from routing to state management, pushed my skills forward. Balancing functionality with aesthetics, especially in responsive design, was challenging yet rewarding. It's thrilling to see my vision come to life, enhancing my confidence and passion for web development."
+                "content": "Embarking on this project was a journey of growth and discovery. Implementing a mobile-first design and mastering React's nuances, from routing to state management, pushed my skills forward. Balancing functionality with aesthetics, especially in responsive design, was challenging yet rewarding. It's thrilling to see our vision come to life, enhancing my confidence and passion for web development."
             }
         ]
     }

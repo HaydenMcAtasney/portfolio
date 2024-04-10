@@ -17,16 +17,16 @@ h3 {
 }
 
 /* keyframes for banner animation */
-@keyframes bannerFadeIn {
+/* @keyframes bannerFadeIn {
     from {
       opacity: 0;
-      transform: scale(0.95); /* start slightly zoomed out */
+      transform: scale(0.95); 
     }
     to {
       opacity: 80%;
-      transform: scale(1); /* scale back to normal size */
+      transform: scale(1); 
     }
-  }
+  } */
   
   .portfolio-banner {
     position: fixed;
@@ -38,7 +38,7 @@ h3 {
     border-radius: 10px;
     width: 100%;
     opacity: 50%;
-    animation: bannerFadeIn 1s ease-out; /* applies animation */
+    /* animation: bannerFadeIn 1s ease-out;  */
   }
   
   .portfolioContent {
@@ -49,7 +49,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    animation: bannerFadeIn 1s ease-out;
+    /* animation: bannerFadeIn 1s ease-out; */
   }
   
 

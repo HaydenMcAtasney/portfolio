@@ -16,16 +16,16 @@ h3 {
 }
 
 /* keyframes for banner animation, reused from portfolio*/
-@keyframes bannerFadeIn {
+/* @keyframes bannerFadeIn {
     from {
       opacity: 0;
-      transform: scale(0.95); /* start slightly zoomed out */
+      transform: scale(0.95); 
     }
     to {
       opacity: 80%;
-      transform: scale(1); /* scale back to normal size */
+      transform: scale(1); 
     }
-}
+} */
   
 .moviedb-banner {
     position: fixed;
@@ -37,7 +37,7 @@ h3 {
     width: 100%;
     border-radius: 10px;
     opacity: 50%;
-    animation: bannerFadeIn 1s ease-out; /* applies animation */
+    /* animation: bannerFadeIn 1s ease-out;  */
 }
 
 .moviedbContent {
@@ -48,7 +48,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    animation: bannerFadeIn 1s ease-out;
+    /* animation: bannerFadeIn 1s ease-out; */
 }
 
 /* new styles for sections */
